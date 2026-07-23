@@ -4,61 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kontakt — forty-one Tattoo Hamburg</title>
-<meta name="description" content="Kontaktiere forty-one Tattoo in Hamburg-Altona: Friedensallee 251, 22763 Hamburg. Telefon 040 / 466 498 83 oder per Kontaktformular.">
+<meta name="description" content="Kontaktiere forty-one Tattoo in Hamburg-Altona: Friedensallee 251, 22763 Hamburg — Telefon 040 / 466 498 83 oder per Formular.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
  
-<header class="site-header">
-  <div class="container nav-row">
-    <a href="index.html" class="brand">forty-one <em>Tattoo</em><br><small>Hamburg · Altona</small></a>
-    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="nav-links">
+<div class="progress"></div>
+ 
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span>forty<span class="nr">-one</span></a>
+    <button class="burger" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="menu">
       <a href="index.html" data-nav="index.html">Start</a>
-      <a href="ueber-uns.html" data-nav="ueber-uns.html">Über uns</a>
-      <a href="galerie.html" data-nav="galerie.html">Galerie</a>
+      <a href="ueber-uns.html" data-nav="ueber-uns.html">Studio</a>
+      <a href="galerie.html" data-nav="galerie.html">Arbeiten</a>
       <a href="service.html" data-nav="service.html">Service</a>
       <a href="jobs.html" data-nav="jobs.html">Jobs</a>
       <a href="kontakt.html" data-nav="kontakt.html">Kontakt</a>
-      <a href="kontakt.html" class="nav-cta mobile-only">Termin anfragen</a>
+      <a href="kontakt.html" class="cta">Termin anfragen</a>
     </nav>
-    <a href="kontakt.html" class="nav-cta">Termin anfragen</a>
   </div>
 </header>
  
 <main>
  
-  <section class="page-hero">
-    <div class="container">
-      <div class="breadcrumb"><a href="index.html">Start</a> / Kontakt</div>
-      <span class="eyebrow">Nimm Kontakt auf</span>
-      <h1>Lass uns über dein Tattoo sprechen.</h1>
-      <p>Melde dich telefonisch, per Mail oder über das Formular — wir vereinbaren gern einen persönlichen Beratungstermin. Bitte melde dich vorab zur Terminvereinbarung.</p>
+  <section class="phero">
+    <div class="wrap">
+      <span class="crumb"><a href="index.html">Start</a> / Kontakt</span>
+      <h1>Say <em>hi.</em></h1>
+      <p>Erzähl uns von deinem Wunschmotiv — telefonisch, per Mail oder über das Formular. Wir melden uns und vereinbaren einen persönlichen Beratungstermin. Bitte melde dich vorab zur Terminvereinbarung.</p>
     </div>
   </section>
  
   <section class="section">
-    <div class="container two-col">
+    <div class="wrap split" style="align-items:start;">
  
       <div class="reveal">
-        <span class="eyebrow">Anfrage senden</span>
-        <h2 style="font-size:26px; margin-top:14px; margin-bottom:24px;">Erzähl uns von deiner Idee</h2>
- 
-        <form id="contact-form" class="form-grid">
+        <span class="tag">Anfrage</span>
+        <h2 class="display" style="font-size:clamp(28px,3.6vw,44px); margin:16px 0 34px;">Deine Idee</h2>
+        <form id="contact-form" class="fgrid">
           <div class="field">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required autocomplete="name">
           </div>
           <div class="field">
             <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required autocomplete="email">
           </div>
           <div class="field">
             <label for="phone">Telefon (optional)</label>
-            <input type="tel" id="phone" name="phone">
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
           </div>
           <div class="field">
-            <label for="style">Gewünschter Stil</label>
+            <label for="style">Stilrichtung</label>
             <select id="style" name="style">
               <option>Realistic Black &amp; Grey</option>
               <option>Realistic Colour</option>
@@ -66,37 +65,40 @@
               <option>Sleeve</option>
               <option>Mandala &amp; Dotwork</option>
               <option>Chicano &amp; Lettering</option>
-              <option>Sonstiges / noch offen</option>
+              <option>Noch offen</option>
             </select>
           </div>
           <div class="field full">
-            <label for="message">Deine Nachricht</label>
-            <textarea id="message" name="message" placeholder="Erzähl uns von deinem Wunschmotiv, der gewünschten Körperstelle und ggf. gewünschtem Zeitraum." required></textarea>
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" placeholder="Wunschmotiv, Körperstelle, gewünschter Zeitraum …" required></textarea>
           </div>
           <div class="field full">
-            <button type="submit" class="btn btn-oxide" style="justify-self:start;">Anfrage senden</button>
-            <p class="form-note">Mit dem Absenden stimmst du der Verarbeitung deiner Angaben gemäß unserer <a href="datenschutz.html" style="color:var(--oxide); text-decoration:underline;">Datenschutzerklärung</a> zu.</p>
+            <button type="submit" class="btn btn-red">Anfrage senden <span class="arr">→</span></button>
+            <p class="fnote">Mit dem Absenden stimmst du der Verarbeitung deiner Angaben gemäß unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.</p>
           </div>
         </form>
- 
         <div class="form-success">
-          Danke für deine Nachricht! Wir melden uns in der Regel innerhalb weniger Werktage bei dir, um einen Beratungstermin zu vereinbaren.
+          Danke für deine Nachricht — wir melden uns in der Regel innerhalb weniger Werktage, um einen Beratungstermin zu vereinbaren.
         </div>
       </div>
  
       <div class="reveal">
-        <span class="eyebrow">Direkt erreichbar</span>
-        <h2 style="font-size:26px; margin-top:14px; margin-bottom:24px;">Studio-Details</h2>
-        <div class="info-line"><span class="k">Adresse</span><span class="v">forty-one Tattoo<br>Friedensallee 251<br>22763 Hamburg-Altona</span></div>
-        <div class="info-line"><span class="k">Telefon</span><span class="v"><a href="tel:+494046649883">040 / 466 498 83</a></span></div>
-        <div class="info-line"><span class="k">E-Mail</span><span class="v"><a href="mailto:info@forty-one-tattoo.de">info@forty-one-tattoo.de</a></span></div>
-        <div class="info-line"><span class="k">Öffnung</span><span class="v">Montag: nach Vereinbarung<br>Dienstag – Samstag: 11 – 19 Uhr</span></div>
-        <div class="info-line"><span class="k">Social</span><span class="v"><a href="https://www.instagram.com/fortyonetattoo/" target="_blank" rel="noopener" style="text-decoration:underline;">@fortyonetattoo</a> auf Instagram &amp; Facebook</span></div>
- 
-        <div class="map-embed" style="margin-top:28px; border:1px solid var(--line); border-radius:2px; overflow:hidden;">
-          <iframe title="Karte forty-one Tattoo, Friedensallee 251, Hamburg" loading="lazy" src="https://maps.google.com/maps?q=Friedensallee%20251%2C%2022763%20Hamburg&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+        <span class="tag">Studio</span>
+        <h2 class="display" style="font-size:clamp(28px,3.6vw,44px); margin:16px 0 34px;">Direkter Draht</h2>
+        <div class="iline"><span class="k">Adresse</span><span class="v">forty-one Tattoo<br>Friedensallee 251<br>22763 Hamburg-Altona</span></div>
+        <div class="iline"><span class="k">Telefon</span><span class="v"><a href="tel:+494046649883">040 / 466 498 83</a></span></div>
+        <div class="iline"><span class="k">E-Mail</span><span class="v"><a href="mailto:info@forty-one-tattoo.de">info@forty-one-tattoo.de</a></span></div>
+        <div class="iline"><span class="k">Öffnung</span><span class="v">Mo: nach Vereinbarung<br>Di – Sa: 11 – 19 Uhr</span></div>
+        <div class="soc">
+          <a href="https://www.instagram.com/fortyonetattoo/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/fortyonetattoo/" target="_blank" rel="noopener">Facebook</a>
         </div>
-        <a href="https://maps.apple.com/?daddr=Friedensallee+251%2C+Hamburg%2C+22763" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:18px;">Route planen →</a>
+        <div class="loc-map" style="margin-top:30px; border:1px solid var(--line);">
+          <iframe title="Karte: forty-one Tattoo, Friedensallee 251, Hamburg" loading="lazy" src="https://maps.google.com/maps?q=Friedensallee%20251%2C%2022763%20Hamburg&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://maps.apple.com/?daddr=Friedensallee+251%2C+Hamburg%2C+22763" target="_blank" rel="noopener" class="btn btn-line">Route planen <span class="arr">→</span></a>
+        </div>
       </div>
  
     </div>
@@ -104,22 +106,18 @@
  
 </main>
  
-<footer class="site-footer">
-  <div class="container">
+<footer class="footer">
+  <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand">forty-one <em>Tattoo</em></div>
+        <h5>Studio</h5>
         <p>Individuelle Tätowierungen in Hamburg-Altona. Jedes Motiv ein Unikat — entwickelt im Dialog mit dir.</p>
-        <div class="social-row" style="margin-top:20px;">
-          <a href="https://www.instagram.com/fortyonetattoo/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
-          <a href="https://www.facebook.com/fortyonetattoo/" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
-        </div>
       </div>
       <div>
-        <h5>Navigation</h5>
+        <h5>Menü</h5>
         <ul>
-          <li><a href="ueber-uns.html">Über uns</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="ueber-uns.html">Studio</a></li>
+          <li><a href="galerie.html">Arbeiten</a></li>
           <li><a href="service.html">Service</a></li>
           <li><a href="jobs.html">Jobs</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
@@ -128,7 +126,7 @@
       <div>
         <h5>Service</h5>
         <ul>
-          <li><a href="service.html#vorbereitung">Vorbereitung &amp; Infos</a></li>
+          <li><a href="service.html#vorbereitung">Vorbereitung</a></li>
           <li><a href="service.html#pflege">Pflegeanleitung</a></li>
           <li><a href="service.html#preise">Kaution &amp; Preise</a></li>
           <li><a href="service.html#agb">AGB</a></li>
@@ -140,17 +138,19 @@
           <li>Friedensallee 251<br>22763 Hamburg</li>
           <li><a href="tel:+494046649883">040 / 466 498 83</a></li>
           <li><a href="mailto:info@forty-one-tattoo.de">info@forty-one-tattoo.de</a></li>
+          <li><a href="https://www.instagram.com/fortyonetattoo/" target="_blank" rel="noopener">@fortyonetattoo</a></li>
         </ul>
       </div>
     </div>
+    <div class="footer-word" aria-hidden="true">forty-one</div>
     <div class="footer-bottom">
-      <span>© Loch-Kaufmann Bott GbR — forty-one Tattoo</span>
-      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutzerklärung</a></span>
+      <span>© Loch-Kaufmann Bott GbR</span>
+      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
     </div>
   </div>
 </footer>
  
-<button class="back-to-top" aria-label="Nach oben scrollen">↑</button>
+<button class="totop" aria-label="Nach oben">↑</button>
  
 <script src="main.js"></script>
 </body>
